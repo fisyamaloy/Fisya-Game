@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DB000000"
+    tools:context=".InputActivity">
+
+    <Button
+        android:id="@+id/change_activity"
+        android:layout_width="205dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/buttons"
+        android:onClick="ChangeActivityClick"
+        android:text="Далее"
+        android:textColor="#DAD3D3"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/AddTeam"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/buttons"
+        android:maxWidth="20dp"
+        android:maxHeight="20dp"
+        android:onClick="AddTeamOnClick"
+        android:text="+"
+        android:textColor="#DAD3D3"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/NameTeam"
+        app:layout_constraintStart_toEndOf="@+id/NameTeam" />
+
+    <EditText
+        android:id="@+id/RoundsQuantity"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/fields"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hapticFeedbackEnabled="false"
+        android:hint=" Количество раундов"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textColorHint="#7A7474"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/RoundTime"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/fields"
+        android:ems="10"
+        android:hint=" Длина раунда (сек)"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textColorHint="#7A7474"
+        app:layout_constraintEnd_toEndOf="@+id/RoundsQuantity"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/RoundsQuantity"
+        app:layout_constraintTop_toBottomOf="@+id/RoundsQuantity" />
+
+    <EditText
+        android:id="@+id/NameTeam"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/fields"
+        android:ems="10"
+        android:hint=" Название Команды"
+        android:inputType="text"
+        android:textColor="#000000"
+        android:textColorHint="#7A7474"
+        app:layout_constraintEnd_toEndOf="@+id/RoundTime"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/RoundTime"
+        app:layout_constraintTop_toBottomOf="@+id/RoundTime" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

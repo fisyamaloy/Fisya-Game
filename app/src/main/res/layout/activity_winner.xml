@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DB000000"
+    tools:context=".WinnerActivity">
+
+    <Button
+        android:id="@+id/change_activity"
+        android:layout_width="205dp"
+        android:layout_height="52dp"
+        android:background="@drawable/buttons"
+        android:onClick="ChangeActivityClick"
+        android:text="Новая игра"
+        android:textColor="#DAD3D3"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/numberstext2"
+        android:layout_width="411dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Победила команда"
+        android:textAlignment="gravity"
+        android:textColor="#AAA8A8"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/team"
+        android:layout_width="410dp"
+        android:layout_height="49dp"
+        android:gravity="center"
+        android:textAlignment="gravity"
+        android:textColor="#F44336"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numberstext2" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="375dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/team"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/winimage" />
+</androidx.constraintlayout.widget.ConstraintLayout>

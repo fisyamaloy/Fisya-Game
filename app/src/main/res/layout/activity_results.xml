@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/form"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DB000000"
+    android:screenOrientation="portrait"
+    tools:context=".ResultsActivity">
+
+    <Button
+        android:id="@+id/change_activity2"
+        android:layout_width="205dp"
+        android:layout_height="52dp"
+        android:background="@drawable/buttons"
+        android:gravity="center"
+        android:onClick="ChangeActivityClick"
+        android:text="Далее"
+        android:textAlignment="center"
+        android:textColor="#DAD3D3"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/numberstext"
+        android:layout_width="295dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="16dp"
+        android:text="Количество баллов:"
+        android:textAlignment="gravity"
+        android:textColor="#AAA8A8"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.387"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="402dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:text="Неправильные ответы:"
+        android:textAlignment="gravity"
+        android:textColor="#AAA8A8"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numberstext" />
+
+    <ListView
+        android:id="@+id/WrongList"
+        android:layout_width="0dp"
+        android:layout_height="397dp"
+        android:cacheColorHint="#FFFFFF"
+        android:textAlignment="center"
+        android:textFilterEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/Number"
+        android:layout_width="61dp"
+        android:layout_height="40dp"
+        android:gravity="start"
+        android:text="5"
+        android:textAlignment="gravity"
+        android:textColor="#F44336"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/numberstext"
+        app:layout_constraintStart_toEndOf="@+id/numberstext"
+        app:layout_constraintTop_toTopOf="@+id/numberstext" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
